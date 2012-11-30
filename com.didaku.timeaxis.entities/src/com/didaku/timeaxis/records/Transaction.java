@@ -105,4 +105,18 @@ public class Transaction implements ITransaction
 
 	}
 
+	@Override
+	public String getTimeaxis()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setTimeaxis(final String timeaxisId)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
 }

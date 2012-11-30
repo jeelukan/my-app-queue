@@ -2,6 +2,8 @@ package com.didaku.timeaxis.base.interfaces;
 
 import java.util.Date;
 
+import com.didaku.common.interfaces.IRecord;
+
 /**
  * 记录一个时间轴中每个动作的记录信息
  * 
@@ -39,6 +41,21 @@ public interface ITransaction extends IRecord
 	 *            最初的动作ID
 	 */
 	public void setInitial(final String id);
+
+	/**
+	 * 设置所属时间轴的ID
+	 * 
+	 * @return 所属时间轴的ID
+	 */
+	public String getTimeaxis();
+
+	/**
+	 * 获取所属时间轴的ID
+	 * 
+	 * @param timeaxisId
+	 *            所属时间轴的ID
+	 */
+	public void setTimeaxis(final String timeaxisId);
 
 	/**
 	 * 获取当前记录的开始时间。
