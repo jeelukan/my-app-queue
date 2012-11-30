@@ -1,5 +1,7 @@
 package com.didaku.timeaxis.entities;
 
+import java.util.Date;
+
 import com.didaku.timeaxis.base.interfaces.ITimeaxis;
 
 /**
@@ -38,6 +40,104 @@ public class Timeaxis implements ITimeaxis
 	public void setDetail(final String detail)
 	{
 		_Detail = detail;
+	}
+
+	@Override
+	public String getOwner()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setOwner(final String id)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public boolean getIsDeleted()
+	{
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public void setIsDeleted(final boolean isDeleted)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public String getCreator()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setCreator(final String creator)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public String getCreatedTime()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setCreatedTime(final String createdTime)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public String getEditor()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setEditor(final String editor)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public Date getEditedTime()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setEditedTime(final Date editedTime)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public int getType()
+	{
+		// TODO 自动生成的方法存根
+		return 0;
+	}
+
+	@Override
+	public void setType(final int type)
+	{
+		// TODO 自动生成的方法存根
+
 	}
 
 }

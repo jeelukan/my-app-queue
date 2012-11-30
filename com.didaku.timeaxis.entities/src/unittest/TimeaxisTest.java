@@ -13,7 +13,7 @@ public class TimeaxisTest
 	public void test()
 	{
 		Timeaxis timeaxis = new Timeaxis();
-		timeaxis.getId();
+		timeaxis.getOwner();
 		fail("尚未实现");
 	}
 
