@@ -1,10 +1,10 @@
-package com.didaku.timeaxis.records;
+package com.didaku.timeaxis.entities;
 
 import java.util.Date;
 
-import com.didaku.timeaxis.base.interfaces.ITransaction;
+import com.didaku.timeaxis.base.interfaces.IBooking;
 
-public class Transaction implements ITransaction
+public class Booking implements IBooking
 {
 	@Override
 	public String getId()
@@ -21,101 +21,100 @@ public class Transaction implements ITransaction
 	}
 
 	@Override
-	public String getIdentifier()
+	public String getDetail()
 	{
 		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
-	public void setIdentifier(final String id)
+	public void setDetail(final String detail)
 	{
 		// TODO 自动生成的方法存根
 
 	}
 
 	@Override
-	public Date getTime()
+	public boolean getIsDeleted()
+	{
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public void setIsDeleted(final boolean isDeleted)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public String getCreator()
 	{
 		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
-	public void setTime(final Date date)
+	public void setCreator(final String creator)
 	{
 		// TODO 自动生成的方法存根
 
 	}
 
 	@Override
-	public String getUser()
+	public String getCreatedTime()
 	{
 		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
-	public void setUser(final String id)
+	public void setCreatedTime(final String createdTime)
 	{
 		// TODO 自动生成的方法存根
 
 	}
 
 	@Override
-	public String getOwner()
+	public String getEditor()
 	{
 		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
-	public void setOwner(final String id)
+	public void setEditor(final String editor)
 	{
 		// TODO 自动生成的方法存根
 
 	}
 
 	@Override
-	public String[] getPrevious()
+	public Date getEditedTime()
 	{
 		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
-	public void setPrevious(final String[] ids)
+	public void setEditedTime(final Date editedTime)
 	{
 		// TODO 自动生成的方法存根
 
 	}
 
 	@Override
-	public String getTimeaxis()
+	public String getPipelineId()
 	{
 		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
-	public void setTimeaxis(final String timeaxisId)
+	public void setPipeLineId(final String pipelineId)
 	{
 		// TODO 自动生成的方法存根
 
 	}
-
-	@Override
-	public String getBooking()
-	{
-		// TODO 自动生成的方法存根
-		return null;
-	}
-
-	@Override
-	public void setBooking(final String id)
-	{
-		// TODO 自动生成的方法存根
-
-	}
-
 }

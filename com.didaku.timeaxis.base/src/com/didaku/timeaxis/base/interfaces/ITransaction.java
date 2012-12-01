@@ -28,19 +28,19 @@ public interface ITransaction extends IRecord
 	public void setIdentifier(final String id);
 
 	/**
-	 * 设置最初的动作ID
+	 * 设置最初的预约ID
 	 * 
-	 * @return 最初的动作ID
+	 * @return 最初的预约ID
 	 */
-	public String getInitial();
+	public String getBooking();
 
 	/**
-	 * 获取最初的动作ID
+	 * 获取最初的预约ID
 	 * 
 	 * @param id
-	 *            最初的动作ID
+	 *            最初的预约ID
 	 */
-	public void setInitial(final String id);
+	public void setBooking(final String id);
 
 	/**
 	 * 设置所属时间轴的ID
