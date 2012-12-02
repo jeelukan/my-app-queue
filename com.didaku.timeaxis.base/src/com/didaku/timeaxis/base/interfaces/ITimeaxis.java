@@ -13,21 +13,6 @@ import com.didaku.common.interfaces.IEntity;
 public interface ITimeaxis extends IEntity
 {
 	/**
-	 * 获取本时间轴的拥有者的ID
-	 * 
-	 * @return 本时间轴的拥有者的ID
-	 */
-	public String getOwner();
-
-	/**
-	 * 设置本时间轴的拥有者的ID
-	 * 
-	 * @param id
-	 *            本时间轴的拥有者的ID
-	 */
-	public void setOwner(final String id);
-
-	/**
 	 * 获取时间轴类型
 	 * 
 	 * @return 时间轴类型

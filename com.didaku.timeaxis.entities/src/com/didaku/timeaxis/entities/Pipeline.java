@@ -23,6 +23,20 @@ public class Pipeline implements IPipeline
 	}
 
 	@Override
+	public String getName()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setName(final String name)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
 	public String getDetail()
 	{
 		// TODO 自动生成的方法存根

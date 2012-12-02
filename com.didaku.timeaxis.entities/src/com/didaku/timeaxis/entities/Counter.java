@@ -2,9 +2,9 @@ package com.didaku.timeaxis.entities;
 
 import java.util.Date;
 
-import com.didaku.timeaxis.base.interfaces.ITimeSource;
+import com.didaku.timeaxis.base.interfaces.ITimeaxis;
 
-public class Counter implements ITimeSource
+public class Counter implements ITimeaxis
 {
 	@Override
 	public String getId()
@@ -15,6 +15,20 @@ public class Counter implements ITimeSource
 
 	@Override
 	public void setId(final String id)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public String getName()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setName(final String name)
 	{
 		// TODO 自动生成的方法存根
 
@@ -104,4 +118,17 @@ public class Counter implements ITimeSource
 
 	}
 
+	@Override
+	public int getType()
+	{
+		// TODO 自动生成的方法存根
+		return 0;
+	}
+
+	@Override
+	public void setType(final int type)
+	{
+		// TODO 自动生成的方法存根
+
+	}
 }

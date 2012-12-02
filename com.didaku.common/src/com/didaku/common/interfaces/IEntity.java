@@ -7,7 +7,7 @@ public interface IEntity
 	/**
 	 * 获取实体的ID
 	 * 
-	 * @return 记录的ID
+	 * @return 实体的ID
 	 */
 	public String getId();
 
@@ -15,9 +15,24 @@ public interface IEntity
 	 * 设置实体的ID
 	 * 
 	 * @param id
-	 *            记录的ID
+	 *            实体的ID
 	 */
 	public void setId(final String id);
+
+	/**
+	 * 获取实体的名称
+	 * 
+	 * @return 实体的名称
+	 */
+	public String getName();
+
+	/**
+	 * 设置实体的名称
+	 * 
+	 * @param name
+	 *            实体的名称
+	 */
+	public void setName(final String name);
 
 	/**
 	 * 获取实体的一些详述

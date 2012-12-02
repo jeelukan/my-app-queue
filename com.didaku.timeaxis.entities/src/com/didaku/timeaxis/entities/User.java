@@ -1,6 +1,5 @@
 package com.didaku.timeaxis.entities;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
 
@@ -16,6 +15,20 @@ public class User implements IUser
 
 	@Override
 	public void setId(final String id)
+	{
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public String getName()
+	{
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void setName(final String name)
 	{
 		// TODO 自动生成的方法存根
 
@@ -120,13 +133,6 @@ public class User implements IUser
 	}
 
 	@Override
-	public String getName()
-	{
-		// TODO 自动生成的方法存根
-		return null;
-	}
-
-	@Override
 	public String getNumber()
 	{
 		// TODO 自动生成的方法存根
@@ -162,7 +168,7 @@ public class User implements IUser
 	}
 
 	@Override
-	public ArrayList<IBooking> getBookings()
+	public Map<String, IBooking> getBookings()
 	{
 		// TODO 自动生成的方法存根
 		return null;
