@@ -2,12 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="/Library/guava-13.0.1.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" path="/com.didaku.timeaxis.base"/>
-	<classpathentry kind="src" path="/com.didaku.timeaxis.entities"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.didaku.common"/>
+	<classpathentry kind="src" path="/com.didaku.orm"/>
+	<classpathentry kind="src" path="/com.didaku.timeaxis.environment"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
