@@ -9,5 +9,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="/com.didaku.orm"/>
+	<classpathentry kind="src" path="/com.didaku.timeaxis.base"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
