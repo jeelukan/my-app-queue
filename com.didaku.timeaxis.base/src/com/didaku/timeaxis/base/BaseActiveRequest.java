@@ -8,43 +8,44 @@ import java.util.Set;
 import com.didaku.timeaxis.base.interfaces.IActiveRequest;
 import com.google.common.collect.Maps;
 
-public class BaseActiveRequest implements Map<String, String>, IActiveRequest
+public abstract class BaseActiveRequest implements Map<String, String>, IActiveRequest
 {
 	private final HashMap<String, String> _Map = Maps.newHashMap();
 
 	@Override
 	public int size()
 	{
-		// TODO 自动生成的方法存根
-		return 0;
+		return _Map.size();
 	}
 
 	@Override
 	public boolean isEmpty()
 	{
-		// TODO 自动生成的方法存根
-		return false;
+		return _Map.isEmpty();
 	}
 
 	@Override
 	public boolean containsKey(final Object key)
 	{
-		// TODO 自动生成的方法存根
-		return false;
+		return _Map.containsKey(key);
 	}
 
 	@Override
 	public boolean containsValue(final Object value)
 	{
-		// TODO 自动生成的方法存根
-		return false;
+		return _Map.containsValue(value);
+	}
+
+	@Override
+	public String get(final String key)
+	{
+		return _Map.get(key);
 	}
 
 	@Override
 	public String get(final Object key)
 	{
-		// TODO 自动生成的方法存根
-		return null;
+		return _Map.get(key);
 	}
 
 	@Override
@@ -56,43 +57,42 @@ public class BaseActiveRequest implements Map<String, String>, IActiveRequest
 	@Override
 	public String remove(final Object key)
 	{
-		// TODO 自动生成的方法存根
-		return null;
+		return _Map.remove(key);
 	}
 
 	@Override
 	public void putAll(final Map<? extends String, ? extends String> m)
 	{
-		// TODO 自动生成的方法存根
-
+		_Map.putAll(m);
 	}
 
 	@Override
 	public void clear()
 	{
-		// TODO 自动生成的方法存根
-
+		_Map.clear();
 	}
 
 	@Override
 	public Set<String> keySet()
 	{
-		// TODO 自动生成的方法存根
-		return null;
+		return _Map.keySet();
 	}
 
 	@Override
 	public Collection<String> values()
 	{
-		// TODO 自动生成的方法存根
-		return null;
+		return _Map.values();
 	}
 
 	@Override
 	public Set<java.util.Map.Entry<String, String>> entrySet()
 	{
-		// TODO 自动生成的方法存根
-		return null;
+		return _Map.entrySet();
 	}
 
+	@Override
+	public String toString()
+	{
+		return this.getClass().getName();
+	}
 }
