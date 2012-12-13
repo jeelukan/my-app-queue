@@ -13,7 +13,17 @@ public class GuiceModule implements Module
 	@Override
 	public void configure(final Binder binder)
 	{
-		binder.bind(IActiveRequest.class).annotatedWith(Names.named("Booking")).to(BookingActiveRequest.class);
+		bindActiveRequest(binder);
+		bindTransaction(binder);
+	}
+
+	private void bindTransaction(final Binder binder)
+	{
 		binder.bind(ITransaction.class).annotatedWith(Names.named("Booking")).to(BookingTransaction.class);
+	}
+
+	private void bindActiveRequest(final Binder binder)
+	{
+		binder.bind(IActiveRequest.class).annotatedWith(Names.named("Booking")).to(BookingActiveRequest.class);
 	}
 }

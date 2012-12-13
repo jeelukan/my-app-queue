@@ -46,4 +46,10 @@ public class BookingAsking
 
 	private Map<String, IPipeline> pipelineMap;
 	private Map<String, IActivity> activityMap;
+
+	public static void main(final String[] args)
+	{
+		BookingAsking asking = new BookingAsking();
+		asking.ask("00", "11");
+	}
 }
